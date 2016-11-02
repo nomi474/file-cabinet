@@ -1,4 +1,4 @@
-= simple_form_for @doc do |f|
+= simple_form_for(@doc, html: { class: 'form-inline'}) do |f|
 	= f.input :title
 	= f.input :content
-	= f.button :submit
+	= f.button :submit 
