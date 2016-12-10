@@ -1,2 +1,20 @@
-<h1>Voila! This is the placeholder</h1>
+#banner
+	.banner_content
+		%h1 File Cabinet
+		%p Your life's work. Organized, always.
+		%button= link_to "Register", new_user_registration_path
+
+#callouts
+	.callout_inner
+		.wrapper
+			.callout
+			%h2 Organize
+			%p 	Kickstarter air plant truffaut PBR&B woke, tbh fanny pack next level. Cred hammock kinfolk lo-fi lomo disrupt. Try-hard jianbing hell of, umami mustache selvage viral wayfarers taxidermy cardigan fashion axe fingerstache chia ennui. Biodiesel wayfarers offal distillery fanny pack, trust fund leggings live-edge raclette blog helvetica twee woke.
+			=image_tag "callout_background.jpg"
+
+#bottom_cta
+	.wrapper
+		%h2 Go Ahead!
+		%br
+		%button= 	link_to "Join Now", new_user_registration_path		
 
