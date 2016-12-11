@@ -9,7 +9,11 @@ class DocsController < ApplicationController
 	end
 
 	def new
-		@doc = current_user.docs.build
+		if user_signed_in?
+			@doc = current_user.docs.build
+		else
+			redirect_to new_user_session_path			
+		end			
 	end
 
 	def create
